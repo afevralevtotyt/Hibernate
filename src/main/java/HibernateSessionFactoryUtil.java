@@ -1,8 +1,10 @@
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
 import javax.persistence.Column;
+import javax.persistence.EntityManager;
 
 
 public class HibernateSessionFactoryUtil {
@@ -15,6 +17,7 @@ public class HibernateSessionFactoryUtil {
         if (sessionFactory == null) {
             try {
                 Configuration configuration = new Configuration().configure();
+                configuration.addAnnotatedClass(City.class);
                 configuration.addAnnotatedClass(Employee.class);
                 StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
                 sessionFactory = configuration.buildSessionFactory(builder.build());
@@ -24,5 +27,6 @@ public class HibernateSessionFactoryUtil {
         }
         return sessionFactory;
     }
+
 }
 

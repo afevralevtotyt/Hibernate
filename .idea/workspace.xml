@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afb801e8-6755-495a-a283-96fe7d82d055" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HibernateSessionFactoryUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    <list default="true" id="afb801e8-6755-495a-a283-96fe7d82d055" name="Changes" comment="Rebuild">
+      <change afterPath="$PROJECT_DIR$/src/test/java/EmployeeDAOImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateSessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateSessionFactoryUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +50,69 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/afevr/IdeaProjects/AppSQLnew/src/main/java/Application.java",
+    "last_opened_file_path": "C:/Users/afevr/IdeaProjects/junit-test-project/src/test/java/pro/sky/java/course2/service/GreetingsServiceTest.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Application" />
+  <component name="RunManager" selected="JUnit.EmployeeDAOImplTest">
+    <configuration name="EmployeeDAOImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hibernate" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeDAOImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeDAOImplTest.shouldCorrectlyDeleteObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hibernate" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeDAOImplTest" />
+      <option name="METHOD_NAME" value="shouldCorrectlyDeleteObject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeDAOImplTest.shouldCorrectlyUpdateObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hibernate" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeDAOImplTest" />
+      <option name="METHOD_NAME" value="shouldCorrectlyUpdateObject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeDAOImplTest.shouldReturnCorrectObjectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hibernate" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeDAOImplTest" />
+      <option name="METHOD_NAME" value="shouldReturnCorrectObjectById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeDAOImplTest.shouldReturnListOfObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hibernate" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeDAOImplTest" />
+      <option name="METHOD_NAME" value="shouldReturnListOfObjects" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.EmployeeDAOImplTest" />
+        <item itemvalue="JUnit.EmployeeDAOImplTest.shouldReturnListOfObjects" />
+        <item itemvalue="JUnit.EmployeeDAOImplTest.shouldCorrectlyDeleteObject" />
+        <item itemvalue="JUnit.EmployeeDAOImplTest.shouldCorrectlyUpdateObject" />
+        <item itemvalue="JUnit.EmployeeDAOImplTest.shouldReturnCorrectObjectById" />
       </list>
     </recent_temporary>
   </component>
@@ -83,11 +125,25 @@
       <option name="presentableId" value="Default" />
       <updated>1678194791112</updated>
       <workItem from="1678194792280" duration="652000" />
+      <workItem from="1678386976801" duration="1420000" />
+      <workItem from="1678435175492" duration="1862000" />
+      <workItem from="1678444632148" duration="4862000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -99,5 +155,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/EmployeeDAOImplTest.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
