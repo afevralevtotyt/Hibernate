@@ -6,21 +6,28 @@ public class Application {
 
         EmployeeDAO employeeDAO = new EmployeeDAOImpl();
 
-        Employee fedor = new Employee("Fedor", "Vasnecov", "male", 24, 1);
+        CityDAO cityDAO = new CityDAOImpl();
 
-        employeeDAO.createEmployee(fedor);
+        City kaliningrad = new City(4, "Kaliningrad");
+
+
+        Employee ilya = new Employee("Ilya", "Denisov", "male", 26,
+                new City("Bagnkok"));
+
+        employeeDAO.createEmployee(ilya);
 
         System.out.println(employeeDAO.readById(1));
 
-        Employee elena = new Employee(2, "Elena", "Holodcova", "female", 23,  1);
+        Employee elena = new Employee(104, "Elena", "Holodcova", "female", 23,  kaliningrad);
 
         employeeDAO.updateEmployee(elena);
 
+       /* cityDAO.delete(new City(99, "Velikiy Novgorod"));*/
 
         List<Employee> employeeList = employeeDAO.readAll();
 
-        employeeList.stream().forEach(System.out::println);
-        employeeDAO.delete(fedor);
+        /*employeeList.stream().forEach(System.out::println);
+        employeeDAO.delete(fedor);*/
 
         List<Employee> employeeListAfterDelete = employeeDAO.readAll();
 

@@ -23,14 +23,15 @@ public class Employee {
     @Column(name="age")
     private int age;
 
-    @Column(name="city_id")
-    private int city;
+    @ManyToOne(targetEntity = City.class, cascade = CascadeType.ALL)
+    @JoinColumn(name="city_id")
+    private City city;
 
     public Employee() {
     }
 
 
-    public Employee(String firstName, String lastName, String gender, int age, int city) {
+    public Employee(String firstName, String lastName, String gender, int age, City city) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
@@ -38,7 +39,7 @@ public class Employee {
         this.city = city;
     }
 
-    public Employee(int id, String firstName, String lastName, String gender, int age, int city) {
+    public Employee(int id, String firstName, String lastName, String gender, int age, City city) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -87,39 +88,14 @@ public class Employee {
         this.age = age;
     }
 
-    public int getCity() {
+    public City getCity() {
         return city;
     }
 
-    public void setCity(int city) {
+    public void setCity(City city) {
         this.city = city;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Employee)) return false;
-
-        Employee employee = (Employee) o;
-
-        if (id != employee.id) return false;
-        if (age != employee.age) return false;
-        if (city != employee.city) return false;
-        if (!Objects.equals(firstName, employee.firstName)) return false;
-        if (!Objects.equals(lastName, employee.lastName)) return false;
-        return Objects.equals(gender, employee.gender);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
-        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
-        result = 31 * result + (gender != null ? gender.hashCode() : 0);
-        result = 31 * result + age;
-        result = 31 * result + city;
-        return result;
-    }
 
     @Override
     public String toString() {
